@@ -1,5 +1,5 @@
 name: "B2500 Meter - modified"
-url: "https://githubhub.com/tomquist/b2500-meter"
+url: "https://github.com/PieVo/b2500-meter"
 maintainer: "Tom Quist <tomquist@users.noreply.github.com>"
 addons:
   b2500_meter:
