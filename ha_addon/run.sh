@@ -36,6 +36,7 @@ CONFIG="/app/config.ini"
 if bashio::config.has_value 'custom_config' && [ -f "/config/$(bashio::config 'custom_config')" ]; then
     bashio::log.info "Using custom config file: $(bashio::config 'custom_config')"
     cp "/config/$(bashio::config 'custom_config')" "$CONFIG"
+    echo "ACCESSTOKEN=$SUPERVISOR_TOKEN" >> "$CONFIG"
 else
     # Generate default config
     {
